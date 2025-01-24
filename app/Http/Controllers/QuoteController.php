@@ -71,7 +71,7 @@ class QuoteController extends Controller
      */
     public function edit(Quote $quote)
     {
-       // return view('quote.edit', compact('quote'));
+        return view('quote.edit', compact('quote'));
     }
 
     /**

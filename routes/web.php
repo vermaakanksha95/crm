@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\QuoteController;
 
 Route::prefix("auth")->group(function () {
     Route::controller(AuthController::class)->group(function () {
@@ -13,6 +14,3 @@ Route::prefix("auth")->group(function () {
 Route::get('/', function () {
     return view('home'); 
 })->name('home');
-Route::get('contact', function () {
-    return view('contact'); 
-})->name('contact');
